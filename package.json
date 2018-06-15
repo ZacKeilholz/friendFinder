@@ -1,17 +1,26 @@
 {
-  "name": "friendFinder",
+  "name": "friendfinder",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js"
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZacKeilholz/friendFinder.git"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.15.0",
-    "express": "^4.13.4"
-  }
+  "bugs": {
+    "url": "https://github.com/ZacKeilholz/friendFinder/issues"
+  },
+  "homepage": "https://github.com/ZacKeilholz/friendFinder#readme"
 }
