@@ -17,26 +17,18 @@ module.exports = function (app) {
   // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
   // ---------------------------------------------------------------------------
 
-
   app.get("/api/friends", function (req, res) {
     console.log("DATA REQ");
     res.json(friends.friendsData);
   });
-  app.get("/api/match", function (req, res) {
-    console.log("MATCH REQ");
-    res.json(friends.getMatch);
 
-  });
 
 
   app.post("/api/friends", function (req, res) {
-
     console.log("SUBMITTED");
-
     //Add New User to Array
     friends.friendsData.push(req.body);
     //Run Main function to retrieve match
-    res.json(true);
-
+    res.json(friends.getMatch());
   });
 };
